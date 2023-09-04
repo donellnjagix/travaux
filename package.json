@@ -1,0 +1,35 @@
+{
+  "name": "travaux-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@heroicons/react": "^2.0.18",
+    "@types/react-anchor-link-smooth-scroll": "^1.0.2",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "next": "13.4.7",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "18.2.0",
+    "react-floating-whatsapp": "^5.0.8",
+    "react-icons": "^4.10.1",
+    "react-multi-carousel": "^2.8.4",
+    "react-responsive-carousel": "^3.2.23",
+    "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.9",
+    "@types/react": "18.2.21",
+    "typescript": "5.2.2"
+  }
+}
