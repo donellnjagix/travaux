@@ -11,6 +11,10 @@ import img6 from "@/public/images/Maisonettes3/CM 4.jpg";
 import img7 from "@/public/images/Maisonettes3/FIRST FLOOR_page-0001.jpg";  
 import img8 from "@/public/images/Maisonettes3/Roof plan_page-0001.jpg";  
 import Link from "next/link";
+import img9 from "@/public/images/Maisonettes5/Flat Roof 1.jpg"; 
+import img10 from "@/public/images/Maisonettes5/Utawala 1.jpg"; 
+import img11 from "@/public/images/Maisonette4/12 X 35 Flat Roof 3D.jpg"; 
+import img12 from "@/public/images/Maisonette4/4 bedroom flat roof 40 x 80_page-0001.jpg";
 
 // Define property types (modify as needed)
 const propertyTypeOptions = ["All", "House", "Apartment", "Condo", "Villa"];
@@ -33,7 +37,7 @@ export const properties: Array<ClassType> = [
     id: 2,
     name: "Properties",
     price: 10,
-    image: [img2.src],
+    image: [img12.src, img12.src,],
     shortDescription: "Lorem ipsum dolor sit amet.",
     longDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quas. Quia corporis error fugit praesentium? Aliquid sit, incidunt assumenda autem veniam expedita dignissimos id animi quia quidem eos ipsa amet!",
@@ -68,6 +72,20 @@ export const properties: Array<ClassType> = [
     location: "City B",
     landSize: "N/A",
     selections: 3, // Add more property entries with relevant details
+  },
+
+  {
+    id: 5,
+    name: "Properties",
+    price: 1000,
+    image: [img3.src, img9.src, img10.src,],
+    shortDescription: "Massionete _ Bungallows on 1/4 Acre ",
+    longDescription:
+      "This is how your dream should look ",
+    propertyType: "Massionete ",
+    location: "City B",
+    landSize: "50FT * 100FT",
+    selections: 4, // Add more property entries with relevant details
   },
 
 ];
