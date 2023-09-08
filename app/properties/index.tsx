@@ -5,6 +5,11 @@ import Card from "../components/Card";
 import img1 from "@/public/images/design/img1.jpg";
 import img2 from "@/public/images/design/img2.jpg";
 import img3 from "@/public/images/Maisonettes3/CM 1.jpg";  
+import img4 from "@/public/images/Maisonettes3/CM 2.jpg";  
+import img5 from "@/public/images/Maisonettes3/CM 3.jpg";  
+import img6 from "@/public/images/Maisonettes3/CM 4.jpg";  
+import img7 from "@/public/images/Maisonettes3/FIRST FLOOR_page-0001.jpg";  
+import img8 from "@/public/images/Maisonettes3/Roof plan_page-0001.jpg";  
 import Link from "next/link";
 
 // Define property types (modify as needed)
@@ -15,7 +20,7 @@ export const properties: Array<ClassType> = [
     id: 1,
     name: "Properties",
     price: 10,
-    image: img1.src,
+    image: [img1.src],
     shortDescription: "Lorem ipsum dolor sit amet.",
     longDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quas. Quia corporis error fugit praesentium? Aliquid sit, incidunt assumenda autem veniam expedita dignissimos id animi quia quidem eos ipsa amet!",
@@ -28,7 +33,7 @@ export const properties: Array<ClassType> = [
     id: 2,
     name: "Properties",
     price: 10,
-    image: img2.src,
+    image: [img2.src],
     shortDescription: "Lorem ipsum dolor sit amet.",
     longDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quas. Quia corporis error fugit praesentium? Aliquid sit, incidunt assumenda autem veniam expedita dignissimos id animi quia quidem eos ipsa amet!",
@@ -41,7 +46,7 @@ export const properties: Array<ClassType> = [
     id: 3,
     name: "Properties",
     price: 1000,
-    image: img3.src,
+    image: [img3.src, img4.src, img5.src, img6.src, img7.src, img8.src,],
     shortDescription: "Massionete _ Bungallows on 1/4 Acre ",
     longDescription:
       "This is how your dream should look ",
@@ -55,7 +60,7 @@ export const properties: Array<ClassType> = [
     id: 4,
     name: "Properties",
     price: 1000,
-    image: img3.src,
+    image: [img3.src],
     shortDescription: "Massionete _ Bungallows on 1/4 Acre ",
     longDescription:
       "This is how your dream should look ",
@@ -68,7 +73,7 @@ export const properties: Array<ClassType> = [
 ];
 
 const Property = () => {
-  const [selectedPropertyType, setSelectedPropertyType] = React.useState("");
+  const [selectedPropertyType, setSelectedPropertyType] = React.useState("All");
   const [searchQuery, setSearchQuery] = React.useState("");
   const [selectedLandSize, setSelectedLandSize] = React.useState("");
   const [selectedNumber, setSelectedNumber] = React.useState<number | null>(
@@ -116,7 +121,7 @@ const Property = () => {
           <select
             value={selectedPropertyType}
             onChange={handlePropertyTypeChange}
-            className="ml-2 p-2 rounded-md border border-gray-300 text-orange-500"
+            className="ml-2 p-2 rounded-md border border-gray-300 text-black"
           >
             {propertyTypeOptions.map((option) => (
               <option key={option} value={option}>
@@ -198,7 +203,7 @@ const Property = () => {
               className="p-2 rounded-md border border-gray-300"
             />
             <button
-              className="bg-blue-500 text-white px-3 py-1 rounded-full"
+              className="bg-orange-500 text-white px-3 py-1 rounded-full"
               onClick={handleSearch}
             >
               Search

@@ -47,7 +47,7 @@ const Design: React.FC<Props> = (props) => {
       id: 1,
       name: "Designs",
       price: 10,
-      image: img1.src,
+      image: [img1.src],
       shortDescription: "Lorem ipsum dolor sit amet.",
       longDescription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quas. Quia corporis error fugit praesentium? Aliquid sit, incidunt assumenda autem veniam expedita dignissimos id animi quia quidem eos ipsa amet!",
@@ -61,7 +61,7 @@ const Design: React.FC<Props> = (props) => {
       id: 2,
       name: "Designs",
       price: 10,
-      image: img2.src,
+      image: [img2.src],
       shortDescription: "Lorem ipsum dolor sit amet.",
       longDescription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quas. Quia corporis error fugit praesentium? Aliquid sit, incidunt assumenda autem veniam expedita dignissimos id animi quia quidem eos ipsa amet!",
