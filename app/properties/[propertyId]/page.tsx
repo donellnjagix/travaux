@@ -60,6 +60,15 @@ const Property = (props: Props) => {
             >
               Back
             </Link>
+            <Link
+  className="bg-green-600 text-white rounded-sm py-1 px-4 w-fit hover:bg-green-700"
+  href="https://wa.me/your-whatsapp-number"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Contact Us on WhatsApp
+</Link>       
+
           </div>
           {/* end */}
         </div>
