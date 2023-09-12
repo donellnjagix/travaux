@@ -7,6 +7,7 @@ import Footer from '@/app/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Carousel } from 'react-responsive-carousel';
+import WhatsAppButton from '../../components/WhatsAppButton';
 type Props = {}
 // ...
 
@@ -62,7 +63,7 @@ const Property = (props: Props) => {
             </Link>
             <Link
   className="bg-green-600 text-white rounded-sm py-1 px-4 w-fit hover:bg-green-700"
-  href="https://wa.me/your-whatsapp-number"
+ href="https://api.whatsapp.com/send?phone=+254729304190"
   target="_blank"
   rel="noopener noreferrer"
 >
@@ -73,6 +74,7 @@ const Property = (props: Props) => {
           {/* end */}
         </div>
         <Footer />
+          <WhatsAppButton />
       </div>
     );
   };
